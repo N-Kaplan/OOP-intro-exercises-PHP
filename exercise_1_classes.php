@@ -20,6 +20,7 @@ class Beverage
     public string $color;
     public float $price;
     public string $temperature;
+    const BARNAME = "Het Vervolg"; //for ex. 6
 
     public function __construct($color, $price, $temperature = 'cold') {
         $this->color = $color;
@@ -27,9 +28,15 @@ class Beverage
         $this->temperature = $temperature;
     }
 
-    function getInfo() {
+    function getInfo(): string
+    {
         //return "This beverage is " . $this->temperature . " and " .$this->color . ".";
         return "This beverage is $this->temperature and $this->color.";
+    }
+
+    function whereToDrink(): string
+    {
+        return "You can drink this beverage at " . $this::BARNAME;  // for ex. 6
     }
 }
 
@@ -41,3 +48,4 @@ var_dump($cola);
 echo "<br>";
 echo $cola->getInfo();
 echo "<br>";
+echo $cola->whereToDrink();
