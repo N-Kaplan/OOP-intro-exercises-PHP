@@ -33,3 +33,16 @@ class Beer extends Beverage
         return $this->alcoholpercentage . " %";
     }
 }
+
+
+echo "<br>exercise 2 <br>";
+
+$duvel = new Beer("Duvel", 8.5, "blond", 3.5);
+
+var_dump($duvel);
+echo "<br>";
+echo $duvel->getInfo();
+echo "<br>";
+echo $duvel->name . ": alcohol percentage is " . $duvel->getAlcoholpercentage() ."<br>";
+echo $duvel->name . ": alcohol percentage is " . $duvel->alcoholpercentage ."%<br>";
+//echo $cola->getAlcoholpercentage(); calling a Beer (child class) method on a Beverage (parent class) object results in the required error.

@@ -32,3 +32,12 @@ class Beverage
         return "This beverage is $this->temperature and $this->color.";
     }
 }
+
+echo "exercise 1 <br>";
+
+$cola = new Beverage('black', 2);
+
+var_dump($cola);
+echo "<br>";
+echo $cola->getInfo();
+echo "<br>";
