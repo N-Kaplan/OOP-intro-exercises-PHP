@@ -11,3 +11,4 @@ Additional exercises introducing Object Oriented Programming in PHP.
     Same for setting a private property in ex. 5.
 * ex. 5: no errors when setting the Beverage class properties to private?
 * \n isn't working, what is the correct usage?
+* ex. 7: What is a second way to access a private static property without creating an instance of the class?

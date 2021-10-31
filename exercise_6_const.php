@@ -52,4 +52,4 @@ echo $duvel->getName() . ": alcohol percentage is " . $duvel->getAlcoholpercenta
 //echo $duvel->name . ": alcohol percentage is " . $duvel->alcoholpercentage ."%<br>";
 echo "<br>Bar's name: " . Beer4::BARNAME . "<br>";
 echo "<br>". $duvel->whereToDrink();
-echo "<br>". $duvel->whereToDrinkWhat();
+echo "<br>". $duvel->whereToDrinkWhat(). "<br>";

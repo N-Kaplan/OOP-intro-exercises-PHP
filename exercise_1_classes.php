@@ -20,7 +20,7 @@ class Beverage
     public string $color;
     public float $price;
     public string $temperature;
-    const BARNAME = "Het Vervolg"; //for ex. 6
+    public const BARNAME = "Het Vervolg"; //for ex. 6
 
     public function __construct($color, $price, $temperature = 'cold') {
         $this->color = $color;
