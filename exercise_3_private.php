@@ -34,15 +34,15 @@ class Beer2 extends Beverage
     {
         $this->color = $color;
     }
-    public function getColor()
+    public function getColor(): string
     {
         return $this->color;
     }
-    public function getName()
+    public function getName(): string
     {
         return $this->name;
     }
-    public function beerInfo()
+    public function beerInfo(): string
     {
         return "<br>Hi i'm {$this->getName()} and have an alochol percentage of {$this->getAlcoholpercentage()} and I have a {$this->getColor()} color.<br>";
     }
